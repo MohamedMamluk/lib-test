@@ -9,7 +9,14 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true, // Enable declaration generation
+    "declarationDir": "dist", // Output declaration files in 'dist' directory
+    "emitDeclarationOnly": true, // Only emit declaration files
+    "skipLibCheck": true, // Optional, helps speed up compilation
+    "composite": true, // Add this line to resolve the error
+    "isolatedModules": true // Add this if you're working with TypeScript only files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
