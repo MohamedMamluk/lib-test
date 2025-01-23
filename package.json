@@ -12,8 +12,7 @@
     "build": "npm run build:types && rollup -c",
     "lint": "eslint .",
     "preview": "vite preview",
-    "rollup": "rollup -c --bundleConfigAsCjs",
-    "postinstall": "npm run rollup"
+    "rollup": "rollup -c --bundleConfigAsCjs"
   },
   "peerDependencies": {
     "react": "^18.0.0",
